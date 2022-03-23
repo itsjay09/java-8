@@ -1,4 +1,4 @@
-package java8.learning.method;
+package java8.learning;
 
 
     /*
