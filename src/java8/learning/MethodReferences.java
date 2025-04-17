@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MethodReferences {
-
     public static void main(String[] args) {
-
         List<Student> students = new ArrayList<>();
         students.add(new Student("Student 1", 30));
         students.add(new Student("Student 2", 12));
@@ -51,5 +49,4 @@ public class MethodReferences {
             this.age = age;
         }
     }
-
 }

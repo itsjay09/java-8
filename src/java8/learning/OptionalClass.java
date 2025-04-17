@@ -9,7 +9,6 @@ package java8.learning;
     When the value inside this container is null it allows doing some predefined actions instead of throwing NPE.
 */
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -18,21 +17,17 @@ public class OptionalClass {
     public static void main(String[] args) {
 
         //Optional<String> optional = Optional.empty();
-
-
         // Wrap the value to Optional
         String str = null;
-        String optional = Optional.of(str).orElseGet(() -> "Default String");
+        Optional<String> optional = Optional.of(str);
         System.out.println(str);
 
         // Handles the null pointer exception
         String str1 = null;
         Optional<String> optional1 = Optional.ofNullable(str1);
-
+       // System.out.println(optional1.get());
         if(optional1.isPresent()){
             System.out.println(optional1.get());
         }
-
-
     }
 }
